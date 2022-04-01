@@ -1,0 +1,17 @@
+name: Mirror to Github Repo
+on:
+  schedule:
+  - cron:  "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "https://gitee.com/juan-lavender/cosbrowser.git"
+        source_branch: "master"
+        destination_branch: "main"
+        github_token: ${{ secrets.PAT }}
