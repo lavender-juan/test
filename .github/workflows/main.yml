@@ -1,8 +1,8 @@
 name: Mirror to Github Repo
 on:
-  schedule:
-  - cron:  "*/5 * * * *"
-  workflow_dispatch:
+    schedule:
+        -
+            cron: 0 0 * * *
 
 jobs:
   repo-sync:
