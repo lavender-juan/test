@@ -13,5 +13,5 @@ jobs:
       with:
         source_repo: "https://gitee.com/juan-lavender/cosbrowser.git"
         source_branch: "master"
-        destination_branch: "main"
+        destination_branch: "dev"
         github_token: ${{ secrets.PAT }}
