@@ -3,10 +3,10 @@ name: repo_sync
 on: [ push, delete, create ]
 
 jobs:
-  sync:
+  repo_sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.PAT }}
-          repository: juan_lavender/https://gitee.com/juan-lavender/cosbrowser.git
+          repository: cosbrowser/https://gitee.com/juan-lavender/cosbrowser.git
