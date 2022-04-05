@@ -6,8 +6,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           token: ${{ secrets.PAT }}
-          ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          repository: org/https://gitee.com/juan-lavender/cosbrowser.git
+          repository: https://gitee.com/juan-lavender/cosbrowser.git
