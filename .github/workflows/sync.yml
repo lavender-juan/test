@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.PAT }}
-          repository: juan-lavender/https://gitee.com/juan-lavender/cosbrowser.git
+          des_repository: juan-lavender/https://gitee.com/juan-lavender/cosbrowser.git
