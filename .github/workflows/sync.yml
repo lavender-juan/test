@@ -10,4 +10,4 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          repository: https://gitee.com/juan-lavender/cosbrowser.git
+          repository: juan_lavender/https://gitee.com/juan-lavender/cosbrowser.git
