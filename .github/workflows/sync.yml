@@ -8,5 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          target_repo_url: https://gitee.com/juan-lavender/cosbrowser.git
+          token: ${{ secrets.PAT }}
+          ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          repository: https://gitee.com/juan-lavender/cosbrowser.git
