@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.PAT }}
-          repository: owner/https://gitee.com/juan-lavender/cosbrowser.git
+          repository: juan-lavender/cosbrowser.git
